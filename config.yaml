@@ -24,8 +24,8 @@ gaode:
     key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # 访问+刷新令牌
 jwt:
-    access_token_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    refresh_token_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    access_token_secret: qdR9DPWju8q1JK4oxe3VUasZvp_1wJTlI7TVBQj7Xdw=
+    refresh_token_secret: LxJA_b6YoaJlCnfNUnEy8OqkMuiFtAV82vFF-4hbwIc=
     access_token_expiry_time: 2h
     refresh_token_expiry_time: 7d
     issuer: go_blog
