@@ -9,9 +9,9 @@ captcha:
 email:
     host: smtp.qq.com
     port: 465
-    from: xxx@qq.com
+    from: 1796748795@qq.com
     nickname: 发件人昵称
-    secret: xxxxxxxxxxxxxxxx
+    secret: nmzjcdwmsorqejdd
     is_ssl: true
 es:
     url: http://127.0.0.1:9200
@@ -75,7 +75,7 @@ upload:
 website:
     logo: ""
     full_logo: ""
-    title: 博客标题-xxx的个人博客
+    title: 方的person_blog
     slogan: 博客标题
     slogan_en: Blog Title
     description: 博客描述
@@ -86,7 +86,7 @@ website:
     bilibili_url: https://space.bilibili.com/xxx
     gitee_url: https://gitee.com/xxx
     github_url: https://github.com/xxx/
-    name: 昵称
+    name: 方
     job: 工作
     address: 地址
     email: xxx@qq.com
