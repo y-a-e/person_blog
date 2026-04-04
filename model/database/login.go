@@ -12,6 +12,6 @@ type Login struct {
 	Address      string `json:"address"`      // 登录地址
 	OS           string `json:"os"`           // 操作系统
 	DeviceInfo   string `json:"device_info"`  // 设备信息
-	BrowserIndo  string `json:"browser_indo"` // 浏览器信息
+	BrowserInfo  string `json:"browser_indo"` // 浏览器信息
 	Status       int    `json:"status"`       // 登录状态
 }
