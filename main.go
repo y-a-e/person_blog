@@ -13,6 +13,11 @@ func main() {
 	global.ESClient = initialize.ConnectES() // initialize目录下启动ES功能
 	global.Redis = initialize.ConnectRedis() // initialize目录下启动Redis功能
 	global.DB = initialize.InitGorm()        // initialize目录下数据库连接
+	defer global.Redis.Close()
+
+	// flag.InitFlag() // 数据库初始化cli程序
+
+	// initialize.InitCron() // 定时任务
 
 	core.RunServer() // 启动服务器
 }

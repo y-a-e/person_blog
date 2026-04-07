@@ -49,7 +49,7 @@ qiniu:
     secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     use_https: true
     use_cdn_domains: true
-# qq登录
+# qq登录 // 审核中
 qq:
     enable: false
     app_id: "000000000"

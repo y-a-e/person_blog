@@ -30,9 +30,18 @@ func InitRouter() *gin.Engine {
 	// 创建路由组
 	routerGroup := router.RouterGroupApp
 
+	// 公共路由
 	publicGroup := Router.Group(global.Config.System.RouterPrefix)
+	// 私有路由-JWT认证
+	privateGroup := Router.Group(global.Config.System.RouterPrefix)
+	privateGroup.Use(middleware.JWTAuth())
+	// 管理者路由-JWT认证-管理者身份
+	adminGroup := Router.Group(global.Config.System.RouterPrefix)
+	adminGroup.Use(middleware.JWTAuth()).Use(middleware.AdminAuth())
 	{
 		routerGroup.InitBaseRouter(publicGroup)
+
+		routerGroup.InitUserRouter(publicGroup, privateGroup, adminGroup)
 	}
 	return Router
 }
