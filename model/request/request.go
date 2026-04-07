@@ -6,3 +6,14 @@ type SendEmailVerificationCode struct {
 	Captcha   string `json:"captcha" binding:"required,len=6"` // required,前端必传，len=6，验证码
 	CaptchaID string `json:"captcha_id" binding:"required"`    // required,前端必传，验证码ID
 }
+
+type ImageDelete struct {
+	IDs []uint `json:"ids"`
+}
+
+type ImageList struct {
+	Name     *string `json:"name" form:"name"`
+	Category *string `json:"category" form:"category"`
+	Storage  *string `json:"storage" form:"storage"`
+	PageInfo
+}

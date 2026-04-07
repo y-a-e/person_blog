@@ -52,8 +52,8 @@ qiniu:
 # qq登录 // 审核中
 qq:
     enable: false
-    app_id: "000000000"
-    app_key: xxxxxxxxxxxxxxxx
+    app_id: "1903790144"
+    app_key: 2zkIcjcIkwtb4IH1
     redirect_uri: http://xxx.xxx/xxx
 redis:
     address: 127.0.0.1:6379
