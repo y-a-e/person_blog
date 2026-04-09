@@ -11,7 +11,7 @@ type Article struct {
 	Title    string   `json:"title"`    // 标题
 	Keyword  string   `json:"keyword"`  // 关键字
 	Category string   `json:"category"` // 类别
-	Tag      []string `json:"tag"`      // 标签
+	Tag      []string `json:"tags"`     // 标签
 	Abstract string   `json:"abstract"` // 简介
 	Content  string   `json:"content"`  // 内容
 
