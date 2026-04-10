@@ -40,10 +40,12 @@ func InitRouter() *gin.Engine {
 	adminGroup.Use(middleware.JWTAuth()).Use(middleware.AdminAuth())
 	{
 		routerGroup.InitBaseRouter(publicGroup)
-
+	}
+	{
 		routerGroup.InitUserRouter(publicGroup, privateGroup, adminGroup)
 		routerGroup.InitArticleRouter(publicGroup, privateGroup, adminGroup)
 		routerGroup.InitCommentRouter(publicGroup, privateGroup, adminGroup)
+		routerGroup.InitFeedbackRouter(publicGroup, privateGroup, adminGroup)
 	}
 	{
 		routerGroup.InitImageRouter(adminGroup)
