@@ -11,7 +11,7 @@ import (
 	"github.com/elastic/go-elasticsearch/v8/typedapi/types/enums/scriptlanguage"
 )
 
-// UpdateArticleViewsSyncTask 将 Redis 中的文章浏览量（增量），同步到 Elasticsearch
+// 文章浏览量定时任务，并同步到Elasticsearch
 func UpdateArticleViewsSyncTask() error {
 	// 获取redis中的缓存数据
 	articleView := service.ServiceGroupApp.ArticleService.NewArticleView()

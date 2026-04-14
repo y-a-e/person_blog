@@ -76,20 +76,20 @@ website:
     logo: ""
     full_logo: ""
     title: 方的person_blog
-    slogan: 博客标题
-    slogan_en: Blog Title
-    description: 博客描述
+    slogan: 个人博客
+    slogan_en: Person Log
+    description: 个人学习博客
     version: 1.0.0
-    created_at: "2025-1-15"
+    created_at: "2026-3-20"
     icp_filing: icp备案号
     public_security_filing: 公安备案号
     bilibili_url: https://space.bilibili.com/xxx
     gitee_url: https://gitee.com/xxx
-    github_url: https://github.com/xxx/
+    github_url: https://github.com/y-a-e/person_blog/tree/main
     name: 方
     job: 工作
     address: 地址
-    email: xxx@qq.com
+    email: 1796748795@qq.com
     qq_image: ""
     wechat_image: ""
 # 日志信息
