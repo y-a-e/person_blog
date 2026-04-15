@@ -1,11 +1,9 @@
-# 验证码信息
 captcha:
     height: 80
     width: 240
     length: 6
     max_skew: 0.7
     dot_count: 80
-# 注册邮箱需要的发件人信息
 email:
     host: smtp.qq.com
     port: 465
@@ -18,18 +16,15 @@ es:
     username: ""
     password: ""
     is_console_print: true
-# ip定位以获取天气，高德
 gaode:
     enable: true
     key: d3819725b5ddc2641745353a41758416
-# 访问+刷新令牌
 jwt:
     access_token_secret: qdR9DPWju8q1JK4oxe3VUasZvp_1wJTlI7TVBQj7Xdw=
     refresh_token_secret: LxJA_b6YoaJlCnfNUnEy8OqkMuiFtAV82vFF-4hbwIc=
     access_token_expiry_time: 2h
     refresh_token_expiry_time: 7d
     issuer: go_blog
-# 数据库
 mysql:
     host: 127.0.0.1
     port: 3306
@@ -40,7 +35,6 @@ mysql:
     max_idle_conns: 10
     max_open_conns: 100
     log_mode: info
-# 云存储
 qiniu:
     zone: z0
     bucket: xxx
@@ -49,7 +43,6 @@ qiniu:
     secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     use_https: true
     use_cdn_domains: true
-# qq登录 // 审核中
 qq:
     enable: false
     app_id: "1903790144"
@@ -59,7 +52,6 @@ redis:
     address: 127.0.0.1:6379
     password: ""
     db: 0
-# 后端服务
 system:
     host: 0.0.0.0
     port: 8080
@@ -71,9 +63,8 @@ system:
 upload:
     size: 20
     path: uploads
-# 网站信息
 website:
-    logo: ""
+    logo: /uploads/image/e4bfb6294c0bbd2e6359ad2814b19ec6-20260410192714.png
     full_logo: ""
     title: 方的person_blog
     slogan: 个人博客
@@ -90,9 +81,8 @@ website:
     job: 工作
     address: 地址
     email: 1796748795@qq.com
-    qq_image: ""
-    wechat_image: ""
-# 日志信息
+    qq_image: /uploads/image/9d15ec906d701e2b516573792f3004df-20260414212504.jpg
+    wechat_image: /uploads/image/3a7cd45738aba807f463529d994704ac-20260410193725.jpg
 zap:
     level: info
     filename: log/go_blog.log
