@@ -8,6 +8,7 @@ type Storage int
 const (
 	Local Storage = iota // 本地
 	Qiniu                // 七牛云
+	Oss                  // OSS
 )
 
 // MarshalJSON 实现了 json.Marshaler 接口
@@ -33,6 +34,8 @@ func (s Storage) String() string {
 		str = "本地"
 	case Qiniu:
 		str = "七牛云"
+	case Oss:
+		str = "OSS"
 	default:
 		str = "未知存储"
 	}
@@ -46,6 +49,8 @@ func ToStorage(str string) Storage {
 		return Local
 	case "七牛云":
 		return Qiniu
+	case "OSS":
+		return Oss
 	default:
 		return -1
 	}

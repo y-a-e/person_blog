@@ -137,3 +137,21 @@ func (configApi *ConfigApi) UpdateGaode(c *gin.Context) {
 	}
 	response.OkWithMessage("Successfully updateGaode", c)
 }
+
+func (configApi *ConfigApi) GetOss(c *gin.Context) {
+	response.OkWithData(global.Config.Oss, c)
+}
+
+func (configApi *ConfigApi) UpdateOss(c *gin.Context) {
+	var req config.Oss
+	err := c.ShouldBindJSON(&req)
+	if err != nil {
+		global.Log.Error(err.Error(), zap.Error(err))
+		response.FailWithMessage(err.Error(), c)
+	}
+	err = configService.UpdateOss(req)
+	if err != nil {
+		response.FailWithMessage("failed to updateGaode ", c)
+	}
+	response.OkWithMessage("Successfully updateGaode", c)
+}

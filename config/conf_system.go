@@ -27,6 +27,8 @@ func (s System) Storage() appTypes.Storage {
 		return appTypes.Local
 	case "qiniu", "Qiniu":
 		return appTypes.Qiniu
+	case "oss", "Oss":
+		return appTypes.Oss
 	default:
 		return appTypes.Local
 	}

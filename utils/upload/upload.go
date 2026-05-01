@@ -30,6 +30,8 @@ func NewOss() OSS {
 		return &Local{}
 	case "qinqu":
 		return &Qiniu{}
+	case "oss":
+		return &Oss{}
 	default:
 		return &Local{}
 	}
@@ -42,6 +44,8 @@ func NewOssWithStorage(storage appTypes.Storage) OSS {
 		return &Local{}
 	case appTypes.Qiniu:
 		return &Qiniu{}
+	case appTypes.Oss:
+		return &Oss{}
 	default:
 		return &Local{}
 	}

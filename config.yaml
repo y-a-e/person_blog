@@ -43,10 +43,19 @@ qiniu:
     secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     use_https: true
     use_cdn_domains: true
+oss:
+    access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    bucket: xxx
+    endpoint: "oss-cn-guangzhou.aliyuncs.com"
+    img_path: https://xxx.xxx/
+    use_https: true
+    region: "Guangzhou"
+    chunk_size: 25
 qq:
     enable: false
     app_id: "1903790144"
-    app_key: 2zkIcjcIkwtb4IH1
+    app_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     redirect_uri: http://xxx.xxx/xxx
 redis:
     address: 127.0.0.1:6379

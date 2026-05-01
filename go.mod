@@ -3,6 +3,7 @@ module server
 go 1.25.4
 
 require (
+	github.com/aliyun/alibabacloud-oss-go-sdk-v2 v1.5.0
 	github.com/elastic/elastic-transport-go/v8 v8.8.0
 	github.com/elastic/go-elasticsearch/v8 v8.19.3
 	github.com/fvbock/endless v0.0.0-20170109170031-447134032cb6
@@ -17,6 +18,7 @@ require (
 	github.com/qiniu/go-sdk/v7 v7.26.8
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/songzhibin97/gkit v1.2.13
+	github.com/tidwall/gjson v1.18.0
 	github.com/ua-parser/uap-go v0.0.0-20251207011819-db9adb27a0b8
 	github.com/urfave/cli v1.22.17
 	go.uber.org/zap v1.27.1
@@ -67,7 +69,6 @@ require (
 	github.com/quic-go/qpack v0.6.0 // indirect
 	github.com/quic-go/quic-go v0.59.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
@@ -83,6 +84,7 @@ require (
 	golang.org/x/sync v0.20.0 // indirect
 	golang.org/x/sys v0.41.0 // indirect
 	golang.org/x/text v0.35.0 // indirect
+	golang.org/x/time v0.4.0 // indirect
 	google.golang.org/protobuf v1.36.10 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	modernc.org/fileutil v1.0.0 // indirect

@@ -78,3 +78,8 @@ func (configService *ConfigService) UpdateGaode(req config.Gaode) error {
 	global.Config.Gaode = req
 	return utils.SaveYAML()
 }
+
+func (configService *ConfigService) UpdateOss(req config.Oss) error {
+	global.Config.Oss = req
+	return utils.SaveYAML()
+}

@@ -24,7 +24,7 @@ func (*Qiniu) UploadImage(file *multipart.FileHeader) (string, string, error) {
 		return "", "", fmt.Errorf("the image size exceeds the set size, the current size is: %.2f MB, the set size is: %d MB", size, global.Config.Upload.Size)
 	}
 
-	ext := filepath.Ext(file.Filename)             // 将\\或;改为.
+	ext := filepath.Ext(file.Filename)             // 获取文件扩展名（如 .jpg, .png）
 	name := strings.TrimSuffix(file.Filename, ext) // 取出文件名
 	if _, exists := WhiteImageList[ext]; !exists {
 		return "", "", errors.New("don't upload files that aren't image types")
